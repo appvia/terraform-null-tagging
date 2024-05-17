@@ -92,11 +92,6 @@ variable "provisioner" {
     condition     = length(var.provisioner) <= 64
     error_message = "The provisioner must be less than or equal to 64"
   }
-
-  validation {
-    condition     = can(regex("^(Cloudformation|Terraform)$", var.provisioner))
-    error_message = "The provisioner must be Cloudformation or Terraform"
-  }
 }
 
 variable "product" {
