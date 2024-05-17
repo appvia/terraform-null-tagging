@@ -1,21 +1,22 @@
 ![Github Actions](../../actions/workflows/terraform.yml/badge.svg)
 
-# Terraform <NAME>
+# Terraform Null Tagging Module
 
 ## Description
 
-Add a description of the module here
+The purpose of this module is for internal use, and use to ensure consistent tagging across all resources. This module is used to inject tags into all resources created by Terraform. The tags are generated based on the input variables provided to the module.
 
 ## Usage
 
-Add example usage here
-
 ```hcl
 module "example" {
-  source  = "appvia/<NAME>/aws"
+  source  = "appvia/tagging/null"
   version = "0.0.1"
 
-  # insert variables here
+  environment = "dev"
+  git_repo    = "https://github.com/appvia/terraform-null-tagging"
+  owner       = "appvia"
+  product     = "terraform-null-tagging"
 }
 ```
 
