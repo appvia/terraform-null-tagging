@@ -33,8 +33,6 @@ The `terraform-docs` utility is used to generate this README. Follow the below s
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.7 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.0.0 |
-| <a name="requirement_awscc"></a> [awscc](#requirement\_awscc) | >= 0.24.0 |
 
 ## Providers
 
@@ -50,9 +48,25 @@ No resources.
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_environment"></a> [environment](#input\_environment) | The environment we are deploying the resources | `string` | n/a | yes |
+| <a name="input_git_repo"></a> [git\_repo](#input\_git\_repo) | The git repository to store the terraform code | `string` | n/a | yes |
+| <a name="input_owner"></a> [owner](#input\_owner) | The owner of the product, and injected into all resource tags | `string` | n/a | yes |
+| <a name="input_product"></a> [product](#input\_product) | The name of the product to provision resources and inject into all resource tags | `string` | n/a | yes |
+| <a name="input_application"></a> [application](#input\_application) | The name of the application to provision resources and inject into all resource tags | `string` | `null` | no |
+| <a name="input_application_tier"></a> [application\_tier](#input\_application\_tier) | The tier of the application to provision resources and inject into all resource tags | `string` | `null` | no |
+| <a name="input_cost_center"></a> [cost\_center](#input\_cost\_center) | The cost center of the product, and injected into all resource tags | `string` | `null` | no |
+| <a name="input_data_classification"></a> [data\_classification](#input\_data\_classification) | The data classification of the product, and injected into all resource tags | `string` | `null` | no |
+| <a name="input_project"></a> [project](#input\_project) | The name of the project to provision resources and inject into all resource tags | `string` | `null` | no |
+| <a name="input_provisioner"></a> [provisioner](#input\_provisioner) | The provisioner of the product, and injected into all resource tags | `string` | `"Terraform"` | no |
+| <a name="input_security_classification"></a> [security\_classification](#input\_security\_classification) | The security classification of the product, and injected into all resource tags | `string` | `null` | no |
+| <a name="input_service"></a> [service](#input\_service) | The name of the service to provision resources and inject into all resource tags | `string` | `null` | no |
+| <a name="input_team"></a> [team](#input\_team) | The team responsible for the product, and injected into all resource tags | `string` | `null` | no |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_tags"></a> [tags](#output\_tags) | A map of all the tags generated for resources. |
 <!-- END_TF_DOCS -->

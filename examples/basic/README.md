@@ -13,7 +13,9 @@ No providers.
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_tagging"></a> [tagging](#module\_tagging) | ../../ | n/a |
 
 ## Resources
 
