@@ -17,5 +17,5 @@ locals {
   )
 
   ## Create an inversion of the above map, where the key is the tag value and the value is the tag key
-  tags_inverted = { for key, value in local.tags : value => key }
+  tags_inverted = { for key, value in local.tags : value => try(key, "") }
 }
