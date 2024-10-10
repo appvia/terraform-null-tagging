@@ -69,18 +69,5 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_application"></a> [application](#output\_application) | The tag to use for the application. |
-| <a name="output_application_tier"></a> [application\_tier](#output\_application\_tier) | The tag to use for the application tier. |
-| <a name="output_cost_center"></a> [cost\_center](#output\_cost\_center) | The tag to use for the cost center. |
-| <a name="output_data_classification"></a> [data\_classification](#output\_data\_classification) | The tag to use for the data classification. |
-| <a name="output_environment"></a> [environment](#output\_environment) | The tag to use for the environment. |
-| <a name="output_git_repo"></a> [git\_repo](#output\_git\_repo) | The tag to use for the git repository. |
-| <a name="output_owner"></a> [owner](#output\_owner) | The tag to use for the owner. |
-| <a name="output_product"></a> [product](#output\_product) | The tag to use for the product. |
-| <a name="output_project"></a> [project](#output\_project) | The tag to use for the project. |
-| <a name="output_provisioner"></a> [provisioner](#output\_provisioner) | The tag to use for the provisioner. |
-| <a name="output_security_classification"></a> [security\_classification](#output\_security\_classification) | The tag to use for the security classification. |
-| <a name="output_service"></a> [service](#output\_service) | The tag to use for the service. |
 | <a name="output_tags"></a> [tags](#output\_tags) | A map of all the tags\_inverted generated for resources. |
-| <a name="output_team"></a> [team](#output\_team) | The tag to use for the team. |
 <!-- END_TF_DOCS -->
